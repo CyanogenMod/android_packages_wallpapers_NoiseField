@@ -95,7 +95,9 @@ public class NoiseFieldWallpaper extends WallpaperService {
         @Override
         public void onTouchEvent(MotionEvent ev) {
             super.onTouchEvent(ev);
-            mWallpaperRS.onTouchEvent(ev);
+            if (mWallpaperRS != null) {
+                mWallpaperRS.onTouchEvent(ev);
+            }
         }
 
         @Override
