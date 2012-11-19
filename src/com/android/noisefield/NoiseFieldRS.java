@@ -95,7 +95,7 @@ public class NoiseFieldRS {
             m1.loadFrustum(-aspect, aspect, -1, 1, 1, 100);
         } else {
             float aspect = ((float) h) / w;
-            m1.loadFrustum(-1, 1, -aspect, aspect, 1, 100);
+            m1.loadFrustum(-0.5f, 1, -aspect, aspect, 1, 100);
         }
 
         m2.loadRotate(180, 0, 1, 0);
