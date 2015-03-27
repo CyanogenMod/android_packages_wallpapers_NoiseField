@@ -4,12 +4,13 @@
       android:versionCode="1"
       android:versionName="1.0">
     <uses-sdk android:minSdkVersion="13" />
-    
-    <uses-feature android:name="android.software.live_wallpaper" />
-  
 
-    <application android:icon="@drawable/icon" android:label="@string/wallpaper_label">
-		<service
+    <uses-feature android:name="android.software.live_wallpaper" />
+
+    <application
+        android:icon="@mipmap/ic_launcher_wallpaper"
+        android:label="@string/wallpaper_label">
+        <service
                 android:name=".NoiseFieldWallpaper"
                 android:label="@string/wallpaper_label"
                 android:launchMode="singleInstance"
